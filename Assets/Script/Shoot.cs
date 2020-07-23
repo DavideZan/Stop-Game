@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    public float reloadTime = 1f;
 
     Vector2 target;
     AudioSource sound;
+    bool canShoot;
 
     // Start is called before the first frame update
     void Start()
     {
+        canShoot = true;
         target = GetComponent<Rigidbody2D>().position;
         sound = GetComponent<AudioSource>();
     }
@@ -21,20 +24,37 @@ public class Shoot : MonoBehaviour
         target = GetComponent<Rigidbody2D>().position;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Shoot");
-            sound.Play();
             Shooting();
         }
     }
 
     void Shooting()
     {
-        RaycastHit2D hit = Physics2D.Raycast(target, -Vector2.up);
-        Debug.DrawRay(target, -Vector2.up, Color.red, 10.0f);
-        Debug.Log(hit.collider);
-        if (hit.collider != null)
+        if (canShoot)
         {
-            Destroy(hit.collider.gameObject);
+            sound.Play();
+            RaycastHit2D hit = Physics2D.Raycast(target, -Vector2.up);
+            Debug.Log(hit.collider);
+            if (hit.collider != null)
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        canShoot = false;
+        Debug.Log(canShoot);
+        StartCoroutine(ReloadTimer());
         }
+    }
+
+    private IEnumerator ReloadTimer()
+    {
+        float reloadTime = 1f; 
+        float elapsed = 0f;
+        while(elapsed <= reloadTime)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }  
+        canShoot = true;
+        yield return null;
     }
 }
