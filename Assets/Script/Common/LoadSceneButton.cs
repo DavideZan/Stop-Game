@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class LoadScene : CommonButton
+public class LoadSceneButton : CommonButton
 {
 
     public string sceneName;
@@ -24,6 +24,6 @@ public class LoadScene : CommonButton
     override public void PressButton()
     {
         Debug.Log("AAAAAAAAAAAAAA " + sceneName);
-        //SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }

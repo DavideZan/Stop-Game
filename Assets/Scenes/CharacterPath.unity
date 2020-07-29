@@ -393,7 +393,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519021299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245a9b77e39f138f699edaf02fca8b90, type: 3}
+  m_Script: {fileID: 11500000, guid: e0ac59054824bb3f9a0215c4cf73d92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Abbatoggia1
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 586806961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245a9b77e39f138f699edaf02fca8b90, type: 3}
+  m_Script: {fileID: 11500000, guid: e0ac59054824bb3f9a0215c4cf73d92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Case1
