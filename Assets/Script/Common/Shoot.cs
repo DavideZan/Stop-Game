@@ -37,8 +37,16 @@ public class Shoot : MonoBehaviour
             Debug.Log(hit.collider);
             if (hit.collider != null)
             {
+                //if a button is being shot
+                if (hit.collider.GetComponent<CommonButton>() != null)
+                {
+                    hit.collider.GetComponent<CommonButton>().PressButton();
+                } 
+                else
+                {
                 Destroy(hit.collider.gameObject);
                 ScoreScript.scoreValue += 100;
+                }
             }
             canShoot = false;
             Debug.Log(canShoot);
