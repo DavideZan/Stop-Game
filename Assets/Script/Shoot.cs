@@ -38,22 +38,23 @@ public class Shoot : MonoBehaviour
             if (hit.collider != null)
             {
                 Destroy(hit.collider.gameObject);
+                ScoreScript.scoreValue += 100;
             }
-        canShoot = false;
-        Debug.Log(canShoot);
-        StartCoroutine(ReloadTimer());
+            canShoot = false;
+            Debug.Log(canShoot);
+            StartCoroutine(ReloadTimer());
         }
     }
 
     private IEnumerator ReloadTimer()
     {
-        float reloadTime = 1f; 
+        float reloadTime = 1f;
         float elapsed = 0f;
-        while(elapsed <= reloadTime)
+        while (elapsed <= reloadTime)
         {
             elapsed += Time.deltaTime;
             yield return null;
-        }  
+        }
         canShoot = true;
         yield return null;
     }
