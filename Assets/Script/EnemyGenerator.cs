@@ -7,10 +7,12 @@ public class EnemyGenerator : MonoBehaviour
 
     public float minY = -5f;
     public float maxY = 4f;
+    public float enemyX = 0f;
+    public float objectOnScreen;
     public GameObject enemyPrefab;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
         GenerateEnemy();
     }
@@ -18,7 +20,7 @@ public class EnemyGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.childCount <= 1)
+        if (gameObject.transform.childCount <= objectOnScreen-1)
         {
             GenerateEnemy();
         }
@@ -28,7 +30,8 @@ public class EnemyGenerator : MonoBehaviour
 
     void GenerateEnemy()
     {
-        float enemyY = Mathf.Floor(Random.Range(minY, maxY));
-        GameObject enemy = Instantiate(enemyPrefab, new Vector2(9, enemyY), Quaternion.identity, this.gameObject.transform);
+         
+         float enemyY = Mathf.Floor(Random.Range(minY, maxY));
+         GameObject enemy = Instantiate(enemyPrefab, new Vector2(enemyX , enemyY), Quaternion.identity, this.gameObject.transform);
     }
 }
