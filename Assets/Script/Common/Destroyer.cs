@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
+
+    public SceneController controller;
+
    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
             Destroy(collision.gameObject);
             //aggiungere condizioni vite
+            controller.SavePlayer();
         }
         else
         {

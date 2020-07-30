@@ -26,8 +26,6 @@ public class EnemyGenerator : MonoBehaviour
         }
     }
 
-    
-
     void GenerateEnemy()
     {
          
