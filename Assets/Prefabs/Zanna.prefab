@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6351908188237846860}
   - component: {fileID: 6351908188237846850}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Zanna
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
