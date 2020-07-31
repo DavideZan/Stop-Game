@@ -6,18 +6,27 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
 
-    public static int scoreValue = 0;
+    public int scoreValue;
     Text score;
+    public ShootingSceneController controller;
+
 
     // Start is called before the first frame update
     void Start()
     {
         score = GetComponent<Text>();
+        scoreValue = controller.GetScore();
     }
 
     // Update is called once per frame
     void Update()
     {
         score.text = scoreValue.ToString();
+    }
+
+    public void AddPoints(int tot)
+    {
+        scoreValue += tot;
+        controller.AddScore(tot);
     }
 }

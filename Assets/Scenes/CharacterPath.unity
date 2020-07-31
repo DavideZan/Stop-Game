@@ -686,8 +686,8 @@ GameObject:
   - component: {fileID: 519021303}
   - component: {fileID: 519021302}
   - component: {fileID: 519021301}
-  - component: {fileID: 519021304}
   - component: {fileID: 519021305}
+  - component: {fileID: 519021304}
   m_Layer: 5
   m_Name: Abbatoggia
   m_TagString: Untagged
@@ -805,10 +805,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519021299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ac59054824bb3f9a0215c4cf73d92a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a0b2c997a09165758c0c552594f4dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Abbatoggia1
+  selector: {fileID: 1732118141}
+  chosenPath: 0
 --- !u!61 &519021305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -930,8 +932,8 @@ GameObject:
   - component: {fileID: 586806965}
   - component: {fileID: 586806964}
   - component: {fileID: 586806963}
-  - component: {fileID: 586806966}
   - component: {fileID: 586806967}
+  - component: {fileID: 586806966}
   m_Layer: 5
   m_Name: Case
   m_TagString: Untagged
@@ -1049,10 +1051,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 586806961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ac59054824bb3f9a0215c4cf73d92a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a0b2c997a09165758c0c552594f4dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Case1
+  selector: {fileID: 1732118141}
+  chosenPath: 1
 --- !u!61 &586806967
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class EnemyGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.childCount <= objectOnScreen-1)
+        if (gameObject.transform.childCount < objectOnScreen)
         {
             GenerateEnemy();
         }
@@ -28,8 +28,8 @@ public class EnemyGenerator : MonoBehaviour
 
     void GenerateEnemy()
     {
-         
-         float enemyY = Mathf.Floor(Random.Range(minY, maxY));
-         GameObject enemy = Instantiate(enemyPrefab, new Vector2(enemyX , enemyY), Quaternion.identity, this.gameObject.transform);
+        float enemyY = Mathf.Floor(Random.Range(minY, maxY));
+        GameObject enemy = Instantiate(enemyPrefab, new Vector2(enemyX , enemyY), Quaternion.identity, this.gameObject.transform);
+        enemy.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
     }
 }

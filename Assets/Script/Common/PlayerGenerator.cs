@@ -6,7 +6,7 @@ public class PlayerGenerator : MonoBehaviour
 {
     public float y = 0f;
     public float x = -9f;
-    public SceneController controller;
+    public ShootingSceneController controller;
 
     private GameObject prefab;
     private GameObject[] map;
@@ -15,8 +15,8 @@ public class PlayerGenerator : MonoBehaviour
     void Start() 
     {
         map = GetComponent<IndexToPrefab>().Map;
-        controller.InitializeScene();
-        Generate(controller.GetPlayerIndex());
+        //controller.InitializeScene();
+        Generate(controller.GetCurrentPlayerIndex());
         controller.GeneratedPlayer();
     }
 
@@ -27,8 +27,10 @@ public class PlayerGenerator : MonoBehaviour
         {
             if (controller.CanGeneratePlayer())
             {
-                Generate(controller.GetPlayerIndex());
+                Generate(controller.GetCurrentPlayerIndex());
                 controller.GeneratedPlayer();
+            } else {
+                controller.CheckEnd();
             }
         }
     }
@@ -36,6 +38,7 @@ public class PlayerGenerator : MonoBehaviour
     void Generate(int index)
     {         
         prefab = map[index];
-        Instantiate(prefab, new Vector2(x , y), Quaternion.identity, this.gameObject.transform);
+        GameObject player = Instantiate(prefab, new Vector2(x , y), Quaternion.identity, this.gameObject.transform);
+        player.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
     }
 }

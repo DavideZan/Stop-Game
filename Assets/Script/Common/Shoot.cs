@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public float reloadTime = 1f;
+    public ScoreScript scoreScript;
 
     Vector2 target;
     AudioSource sound;
@@ -16,6 +17,7 @@ public class Shoot : MonoBehaviour
         canShoot = true;
         target = GetComponent<Rigidbody2D>().position;
         sound = GetComponent<AudioSource>();
+        scoreScript = (ScoreScript) FindObjectOfType(typeof(ScoreScript));
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class Shoot : MonoBehaviour
                 else
                 {
                 Destroy(hit.collider.gameObject);
-                ScoreScript.scoreValue += 100;
+                scoreScript.AddPoints(100);
                 }
             }
             canShoot = false;

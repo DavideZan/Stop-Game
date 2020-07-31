@@ -20,6 +20,7 @@ public class SelectorScript : MonoBehaviour
     private Vector3 CharacterPosition;
     private Vector3 OffScreen;
     private int CharacterInt = 1;
+    public int ChosenCharacter { get => CharacterInt;}
     private SpriteRenderer ArniRender, ZannaRender, NicoAATMRender, NicoARender, ManuRender, LuciaRender, GregRender, GiuliaDRender, GiuliaBRender, FilloRender, FedeRender, CostiRender, BroccoliRender;
 
     private void Awake()

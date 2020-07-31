@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-
-    public SceneController controller;
+    public ShootingSceneController controller;
 
    private void OnTriggerEnter2D(Collider2D collision)
     {
