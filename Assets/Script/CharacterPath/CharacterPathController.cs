@@ -27,8 +27,14 @@ public class CharacterPathController : SceneController
     }
 
     public void SetCharacter(int i){
-        saved = new List<int>(i);
+        saved = new List<int>();
+        saved.Add(i);
+        //Debug.Log("SET CHARACTER: SAVED COUNT " + saved.Count);
         waiting = GenerateWaitingExcluding(i);
+    }
+    public override void LoadNextScene(){
+        SaveData();
+        base.LoadNextScene();
     }
 
     private LinkedList<int> GenerateWaitingExcluding(int i) 

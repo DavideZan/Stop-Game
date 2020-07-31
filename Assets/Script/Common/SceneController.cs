@@ -17,7 +17,7 @@ public class SceneController : MonoBehaviour
     protected LinkedList<int> waiting;
     protected Path chosenPath;
 
-        virtual protected void SaveData(){
+    virtual protected void SaveData(){
         string gameData = JsonUtility.ToJson(new GameData(score, saved, waiting.ToList(), chosenPath));
         System.IO.File.WriteAllText(Application.persistentDataPath + "/gameData.json", gameData);
     }

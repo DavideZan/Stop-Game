@@ -15,12 +15,6 @@ public class PathSelection : LoadSceneButton
         controller = (CharacterPathController) FindObjectOfType(typeof(CharacterPathController));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     override public void PressButton()
     {
         controller.SetPath(chosenPath);

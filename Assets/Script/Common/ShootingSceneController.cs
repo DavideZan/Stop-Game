@@ -38,6 +38,7 @@ public class ShootingSceneController : SceneController
 
     public bool CanGeneratePlayer()
     {
+        //Debug.Log("ALIVE COUNT " + alive.Count);
         return currentIndex < alive.Count;
     }
 
