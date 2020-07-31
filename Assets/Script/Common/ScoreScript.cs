@@ -14,6 +14,7 @@ public class ScoreScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
         score = GetComponent<Text>();
         scoreValue = controller.GetScore();
     }

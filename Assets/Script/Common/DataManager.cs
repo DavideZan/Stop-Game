@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    public static DataManager sceneController;
+    public static DataManager dataManager;
 
     private int score;
     public int Score { get => score; set => score = value; }
@@ -21,13 +21,13 @@ public class DataManager : MonoBehaviour
         //Let the gameobject persist over the scenes
         DontDestroyOnLoad(gameObject);
         //Check if the control instance is null
-        if (sceneController == null)
+        if (dataManager == null)
         {
             //This instance becomes the single instance available
-            sceneController = this;
+            dataManager = this;
         }
         //Otherwise check if the control instance is not this one
-        else if (sceneController != this)
+        else if (dataManager != this)
         {
             //In case there is a different instance destroy this one.
             Destroy(gameObject);
@@ -43,5 +43,7 @@ public class DataManager : MonoBehaviour
         waiting = new LinkedList<int>(range);
         this.chosenPath = chosenPath;
     }
+
+    virtual public List<int> GetAlive(){ return alive.ToList();}
 
 }

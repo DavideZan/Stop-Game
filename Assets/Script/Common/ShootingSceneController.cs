@@ -4,31 +4,15 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ShootingSceneController : MonoBehaviour
+public class ShootingSceneController : SceneController
 {
-    public string nextScene;
-
-    protected DataManager data;
-    private int currentIndex;
-    private List<int> saved;
-    private List<int> dead;
-    private int score;
-    private List<int> alive;
-
     // Start is called before the first frame update
     void Start()
     {
-        data = (DataManager) FindObjectOfType(typeof(DataManager));
-        InitializeScene();
-    }
-
-    public void InitializeScene()
-    {
+        LoadData();
         currentIndex = 0;
         saved = new List<int>();
         dead = new List<int>();
-        score = data.Score;
-        alive = data.Alive;
     }
 
     public int GetCurrentPlayerIndex()
@@ -49,6 +33,7 @@ public class ShootingSceneController : MonoBehaviour
     public void KillPlayer()
     {
         dead.Add(alive[currentIndex-1]);
+        waiting.AddFirst(alive[currentIndex-1]);
     }
 
     public bool CanGeneratePlayer()
@@ -78,20 +63,4 @@ public class ShootingSceneController : MonoBehaviour
     {
         return score;
     }
-
-    private void SaveData(){
-        data.Alive = saved.ToList();
-        foreach (var d in dead)
-        {   
-            data.Waiting.AddFirst(d);
-        }
-
-        data.Score = data.Score + score;
-    }
-
-    virtual public void LoadNextScene()
-    {
-        SceneManager.LoadScene(nextScene);
-    }
-
 }

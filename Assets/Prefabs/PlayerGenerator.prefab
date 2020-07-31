@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _players:
   - {fileID: 6351908188237846857, guid: adef948117c51f744a6e0092922f2910, type: 3}
-  - {fileID: 6351908188237846857, guid: adef948117c51f744a6e0092922f2910, type: 3}
+  - {fileID: 8480168816046821511, guid: a0e5e831304d117fc8e66cb2085e8e5c, type: 3}
   - {fileID: 6351908188237846857, guid: adef948117c51f744a6e0092922f2910, type: 3}
   - {fileID: 6351908188237846857, guid: adef948117c51f744a6e0092922f2910, type: 3}
   - {fileID: 6351908188237846857, guid: adef948117c51f744a6e0092922f2910, type: 3}

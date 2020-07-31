@@ -15,9 +15,7 @@ public class PlayerGenerator : MonoBehaviour
     void Start() 
     {
         map = GetComponent<IndexToPrefab>().Map;
-        //controller.InitializeScene();
-        Generate(controller.GetCurrentPlayerIndex());
-        controller.GeneratedPlayer();
+        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
     }
 
     // Update is called once per frame

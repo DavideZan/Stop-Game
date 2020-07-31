@@ -11,10 +11,10 @@ public class GiardiniSceneController : ShootingSceneController
 
     override public void LoadNextScene()
     {
-        if (data.ChosenPath == Path.Abbatoggia){
-        SceneManager.LoadScene(nextAbbatoggia);
-        } else if (data.ChosenPath == Path.Case){
-        SceneManager.LoadScene(nextCase);
+        if (chosenPath == Path.Abbatoggia){
+            SceneManager.LoadScene(nextAbbatoggia);
+        } else if (chosenPath == Path.Case){
+            SceneManager.LoadScene(nextCase);
         }
     }
 }

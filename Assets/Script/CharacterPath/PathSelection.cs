@@ -6,17 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class PathSelection : LoadSceneButton
 {
-    public SelectorScript selector;
     public Path chosenPath;
-    private DataManager data;
+    public CharacterPathController controller;
 
     // Start is called before the first frame update
     void Start()
     {
-        data = (DataManager) FindObjectOfType(typeof(DataManager));
-        // if (data != null){
-        //     Debug.Log("FOUUUND");
-        // }
+        controller = (CharacterPathController) FindObjectOfType(typeof(CharacterPathController));
     }
 
     // Update is called once per frame
@@ -27,8 +23,10 @@ public class PathSelection : LoadSceneButton
 
     override public void PressButton()
     {
-        data.SetupEverything(selector.ChosenCharacter, chosenPath);
-        Debug.Log("AAAAAAAAAAAAAA " + sceneName);
-        SceneManager.LoadScene(sceneName);
+        controller.SetPath(chosenPath);
+        controller.SetScene(sceneName);
+        controller.LoadNextScene();
+        // Debug.Log("AAAAAAAAAAAAAA " + sceneName);
+        // SceneManager.LoadScene(sceneName);
     }
 }
