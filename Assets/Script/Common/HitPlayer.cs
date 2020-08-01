@@ -21,7 +21,7 @@ public class HitPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
     }
 
     // Update is called once per frame

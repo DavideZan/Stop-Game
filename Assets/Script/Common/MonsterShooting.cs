@@ -5,32 +5,27 @@ using UnityEngine;
 public class MonsterShooting : MonoBehaviour
 {
 
-    private float timeBtwShots;
+    private float remainingTime;
     public float startTimeBtwnShots;
-    public GameObject Bullet;
-    
-
-  
-
+    public GameObject bullet;
+ 
     // Start is called before the first frame update
     void Start()
     {
-        timeBtwShots = startTimeBtwnShots;
+        remainingTime = startTimeBtwnShots;
     }
     // Update is called once per frame
     void Update()
 
     {
-        if (timeBtwShots <=0)
+        if (remainingTime <= 0)
         {
-            Instantiate(Bullet, transform.position, Quaternion.identity);
-            timeBtwShots = startTimeBtwnShots;
+            Instantiate(bullet, transform.position, Quaternion.identity);
+            remainingTime = startTimeBtwnShots;
         }
         else
         {
-            timeBtwShots -= Time.deltaTime;
+            remainingTime -= Time.deltaTime;
         }
-    }
-     
-    
+    }  
 }

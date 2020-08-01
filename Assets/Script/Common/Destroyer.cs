@@ -18,6 +18,11 @@ public class Destroyer : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+    }
 
+    // Start is called before the first frame update
+    void Start() 
+    {
+        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
     }
 }

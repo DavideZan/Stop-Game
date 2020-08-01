@@ -10,6 +10,8 @@ public class ScoreScript : MonoBehaviour
     Text score;
     public ShootingSceneController controller;
 
+    private string fixedText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +19,13 @@ public class ScoreScript : MonoBehaviour
         controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
         score = GetComponent<Text>();
         scoreValue = controller.GetScore();
+        fixedText = score.text;
     }
 
     // Update is called once per frame
     void Update()
     {
-        score.text = scoreValue.ToString();
+        score.text = fixedText + scoreValue.ToString();
     }
 
     public void AddPoints(int tot)

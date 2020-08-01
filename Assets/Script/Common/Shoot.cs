@@ -36,23 +36,36 @@ public class Shoot : MonoBehaviour
         {
             sound.Play();
             RaycastHit2D hit = Physics2D.Raycast(target, -Vector2.up);
-            Debug.Log(hit.collider);
+            //Debug.Log(hit.collider);
             if (hit.collider != null)
             {
                 //if a button is being shot
                 if (hit.collider.GetComponent<CommonButton>() != null)
                 {
                     hit.collider.GetComponent<CommonButton>().PressButton();
+                }
+                else if (hit.collider.tag == "Player")
+                {
+                    var controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
+                    Destroy(hit.collider.gameObject);
+                    controller.KillPlayer();
+
+                } else if (hit.collider.GetComponent<BulletScript>() != null)
+                {
+                    Destroy(hit.collider.gameObject);
+                    scoreScript.AddPoints(50);
                 } 
                 else
                 {
-                Destroy(hit.collider.gameObject);
-                scoreScript.AddPoints(100);
+                    Destroy(hit.collider.gameObject);
+                    scoreScript.AddPoints(100);
                 }
             }
-            canShoot = false;
-            Debug.Log(canShoot);
-            StartCoroutine(ReloadTimer());
+            else {
+                canShoot = false;
+                //Debug.Log(canShoot);
+                StartCoroutine(ReloadTimer());
+            }
         }
     }
 

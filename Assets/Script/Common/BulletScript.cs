@@ -32,6 +32,7 @@ public class BulletScript : MonoBehaviour
         {
             Destroy(collision.gameObject);
             controller.KillPlayer();
+            DestroyBullet();
         }
     }
 

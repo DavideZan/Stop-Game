@@ -222,6 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e78c960c68e12428d57b56785d1e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
+  controller: {fileID: 0}
 --- !u!114 &467847600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadTime: 1
+  scoreScript: {fileID: 0}
 --- !u!82 &495009936
 AudioSource:
   m_ObjectHideFlags: 0

@@ -27,7 +27,9 @@ public class ShootingSceneController : SceneController
 
     public void SavePlayer()
     {
+        //Debug.Log("SAVING: " + alive[currentIndex-1]);
         saved.Add(alive[currentIndex-1]);
+        //Debug.Log("SAVED: " + saved.Count);
     }
 
     public void KillPlayer()
@@ -45,6 +47,7 @@ public class ShootingSceneController : SceneController
     public void CheckEnd()
     {
         if (!CanGeneratePlayer()){
+            //Debug.Log("SAVED - end : " + saved.Count);
             if (saved.Count > 0){
                 SaveData();
                 LoadNextScene();
