@@ -5,8 +5,6 @@ using System.Linq;
 
 public class CharacterPathController : SceneController
 {
-    public SelectorScript selector;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +15,6 @@ public class CharacterPathController : SceneController
     }
 
     public void SetPath(Path p){
-        //TODO: actual implementation with a button
-        SetCharacter(selector.ChosenCharacter);
         chosenPath = p;
     }
 
@@ -39,7 +35,7 @@ public class CharacterPathController : SceneController
 
     private LinkedList<int> GenerateWaitingExcluding(int i) 
     {
-        int[] waits = Enumerable.Range(1, 10)
+        int[] waits = Enumerable.Range(1, 13)
                                 .Where((e, _) => e != i)
                                 .OrderBy(x => Random.Range(0f,1f))
                                 .ToArray();
