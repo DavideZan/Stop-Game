@@ -35,8 +35,9 @@ public class Shoot : MonoBehaviour
         if (canShoot)
         {
             sound.Play();
-            RaycastHit2D hit = Physics2D.Raycast(target, -Vector2.up);
+            RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward);
             //Debug.Log(hit.collider);
+            Debug.DrawRay(target, Vector3.forward, Color.yellow, 2);
             if (hit.collider != null)
             {
                 //if a button is being shot
