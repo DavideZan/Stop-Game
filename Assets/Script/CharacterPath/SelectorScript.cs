@@ -15,6 +15,7 @@ public class SelectorScript : MonoBehaviour
         controller = (CharacterPathController) FindObjectOfType(typeof(CharacterPathController));
         map = GetComponent<IndexToPrefab>();
         ShowCurrentPrefab();
+        controller.SetCharacter(characterIndex);
     }
 
     public void RightCharacter()
