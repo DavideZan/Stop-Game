@@ -10,6 +10,7 @@ public class ShootingSceneController : SceneController
     void Start()
     {
         LoadData();
+        //Debug.Log("N° ALIVE: " + alive.Count);
         currentIndex = 0;
         saved = new List<int>();
         dead = new List<int>();
@@ -49,6 +50,7 @@ public class ShootingSceneController : SceneController
         if (!CanGeneratePlayer()){
             //Debug.Log("SAVED - end : " + saved.Count);
             if (saved.Count > 0){
+                GainNewCharacter();
                 SaveData();
                 LoadNextScene();
             } else {
@@ -66,5 +68,12 @@ public class ShootingSceneController : SceneController
     public int GetScore()
     {
         return score;
+    }
+
+    private void GainNewCharacter()
+    {
+        int gained = waiting.First.Value;
+        waiting.RemoveFirst();
+        saved.Add(gained);
     }
 }
