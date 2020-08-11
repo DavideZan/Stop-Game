@@ -55,7 +55,12 @@ public class Shoot : MonoBehaviour
                 {
                     Destroy(hit.collider.gameObject);
                     scoreScript.AddPoints(50);
-                } 
+                }
+                else if (hit.collider.GetComponent<ShootableObject>() != null) 
+                {
+                    hit.collider.GetComponent<ShootableObject>().OnShoot();
+                    scoreScript.AddPoints(75);
+                }
                 else
                 {
                     Destroy(hit.collider.gameObject);
