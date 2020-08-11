@@ -33,7 +33,7 @@ public class ShootingSceneController : SceneController
         //Debug.Log("SAVED: " + saved.Count);
     }
 
-    public void KillPlayer()
+    virtual public void KillPlayer()
     {
         dead.Add(alive[currentIndex-1]);
         waiting.AddFirst(alive[currentIndex-1]);
