@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0b2c997a09165758c0c552594f4dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Abbatoggia1
+  sceneName: Giardini
   chosenPath: 0
   controller: {fileID: 961324194}
 --- !u!61 &519021305
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0b2c997a09165758c0c552594f4dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Case1
+  sceneName: Giardini
   chosenPath: 1
   controller: {fileID: 961324194}
 --- !u!61 &586806967
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c891cc12a6e0d9c58832586115f4a715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: Giardini
 --- !u!4 &961324195
 Transform:
   m_ObjectHideFlags: 0

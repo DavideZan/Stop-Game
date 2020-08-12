@@ -6,9 +6,8 @@ public class GeneralMovement : MonoBehaviour
 {
     Rigidbody2D rigi;
     public float speed = 10;
+    
     private void Awake ()
-   
-   
     {
         rigi = this.GetComponent<Rigidbody2D>();
     }

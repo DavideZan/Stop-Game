@@ -23,7 +23,7 @@ public class CharacterPathController : SceneController
     }
 
     public void SetCharacter(int i){
-        saved = new List<int>();
+        saved.Clear(); 
         saved.Add(i);
         //Debug.Log("SET CHARACTER: SAVED COUNT " + saved.Count);
         waiting = GenerateWaitingExcluding(i);

@@ -12,11 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterPath.unity
     guid: cfb5451fc1bfaac478042515a3c0a507
   - enabled: 1
-    path: Assets/Scenes/FirstMap.unity
-    guid: 588e06c17fdae8c48a69e23b89734dc5
-  - enabled: 1
-    path: Assets/Scenes/Case3.unity
-    guid: 24fa1f9ca08b20f06af376d49c928440
+    path: Assets/Scenes/Giardini.unity
+    guid: 5648c3068ca0def389ed0a1968b9b8ee
   - enabled: 1
     path: Assets/Scenes/Abbatoggia1.unity
     guid: 78f7a7ca836885c43b455b343963c1dc
@@ -33,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Case2.unity
     guid: 06c832507802be624b1819b53d4ec392
   - enabled: 1
+    path: Assets/Scenes/Case3.unity
+    guid: 24fa1f9ca08b20f06af376d49c928440
+  - enabled: 1
     path: Assets/Scenes/Stop.unity
     guid: 96e2bb731647f830ab6954e535fd33b2
+  - enabled: 1
+    path: Assets/Scenes/FirstMap.unity
+    guid: 588e06c17fdae8c48a69e23b89734dc5
   m_configObjects: {}
