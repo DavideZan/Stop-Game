@@ -8,8 +8,13 @@ public class PlayerGenerator : MonoBehaviour
     public float x = -9f;
     public ShootingSceneController controller;
 
-    private GameObject prefab;
-    private GameObject[] map;
+    protected GameObject prefab;
+    protected GameObject[] map;
+    protected Quaternion _rotation = Quaternion.identity;
+    public Quaternion rotation {
+        get => _rotation;
+        set => _rotation = value;
+    }
 
     // Start is called before the first frame update
     void Start() 
@@ -33,10 +38,10 @@ public class PlayerGenerator : MonoBehaviour
         }
     }
 
-    void Generate(int index)
+    virtual protected void Generate(int index)
     {         
         prefab = map[index];
-        GameObject player = Instantiate(prefab, new Vector2(x , y), Quaternion.identity, this.gameObject.transform);
+        GameObject player = Instantiate(prefab, new Vector2(x , y), _rotation, this.gameObject.transform);
         player.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
     }
 }

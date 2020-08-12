@@ -8,11 +8,13 @@ public class Thermometer : MonoBehaviour
     public Sprite[] sprites;
 
     private SpriteRenderer current;
+    private AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
     {
         current = gameObject.GetComponent<SpriteRenderer>();
+        sound = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Thermometer : MonoBehaviour
         {
             case State.IDLE :
                 current.sprite = sprites[0];
+                sound.Play();
                 break;
             case State.SLOW :
                 current.sprite = sprites[1];
@@ -41,6 +44,9 @@ public class Thermometer : MonoBehaviour
                 current.sprite = sprites[3];
                 break;
 
+        }
+        if (state != State.IDLE){
+            sound.Stop();
         }  
     }
 }

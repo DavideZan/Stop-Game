@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3851186614151411066}
   - component: {fileID: 3851186614151411065}
   - component: {fileID: 3851186614151411067}
+  - component: {fileID: 5305346281415060952}
   m_Layer: 0
   m_Name: PlayerGenerator
   m_TagString: Untagged
@@ -73,3 +74,16 @@ MonoBehaviour:
   - {fileID: 6351908188237846857, guid: f73a587a20f11a0438cd56d36e194ec3, type: 3}
   - {fileID: 6351908188237846857, guid: a14170806eb5c1507aa4cef1342d2179, type: 3}
   - {fileID: 6351908188237846857, guid: 8a5497084a873d69993327b84fd49124, type: 3}
+--- !u!114 &5305346281415060952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851186614151411064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b366136553e1c60a8b7861dd9c9ac273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: {x: 0, y: 0, z: 0}

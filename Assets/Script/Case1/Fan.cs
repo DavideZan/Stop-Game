@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fan : ShootableObject
 {
     public float stateDuration = 5f;
+    public float lastSecondSaveDuration = 1f;
     public CasaLuciaController controller;
     [SerializeField]
     private State currentState;
@@ -54,6 +55,25 @@ public class Fan : ShootableObject
     }
 
     private void CheckNotIdle()
+    {
+        if (currentState == State.IDLE)
+        {
+            StartCoroutine(LastSecondSaveTimer());
+        }
+    }
+
+    private IEnumerator LastSecondSaveTimer()
+    {
+        float remaining = lastSecondSaveDuration;
+        while(remaining >= 0f)
+        {
+            remaining -= Time.deltaTime;
+            yield return null;
+        }
+        KillPlayerIfStillIdle();
+    }
+
+    private void KillPlayerIfStillIdle()
     {
         if (currentState == State.IDLE)
         {
