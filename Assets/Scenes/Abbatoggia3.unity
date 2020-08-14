@@ -207,7 +207,7 @@ MonoBehaviour:
   minX: 9
   maxX: 9
   objectOnScreen: 1
-  enemyPrefab: {fileID: 8480168816046821511, guid: a0e5e831304d117fc8e66cb2085e8e5c,
+  enemyPrefab: {fileID: 8480168816046821511, guid: a4766615f119970449121338733342b9,
     type: 3}
 --- !u!1 &143255364
 GameObject:

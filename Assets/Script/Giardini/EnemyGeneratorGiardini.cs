@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class EnemyGeneratorGiardini : MonoBehaviour
 {
-    public float enemyY = 0f;
-    float[] spawn = new float[3] { 4, 7, 9 };
+    public float enemyY;
+    public float enemyZ;
+    float[] spawn = new float[3] { 0, 2, 9 };
     Random ran = new Random();
     public float objectOnScreen;
     public GameObject enemyPrefab;
+    
 
 
     // Start is called before the first frame update
@@ -23,7 +25,8 @@ public class EnemyGeneratorGiardini : MonoBehaviour
     {
         if (gameObject.transform.childCount < objectOnScreen)
         {
-            GenerateEnemy();  
+            GenerateEnemy();
+            
         }
     }
 
@@ -31,8 +34,9 @@ public class EnemyGeneratorGiardini : MonoBehaviour
     {
         System.Random ran = new System.Random();
         float enemyX = spawn[ran.Next(spawn.Length)];
-       GameObject enemy = Instantiate(enemyPrefab, new Vector2(enemyX, enemyY), Quaternion.identity, this.gameObject.transform);
+       GameObject enemy = Instantiate(enemyPrefab, new Vector3(enemyX, enemyY, enemyZ), Quaternion.identity, this.gameObject.transform);
        enemy.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
+       
     }
 }
 

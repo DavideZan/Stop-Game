@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8480168816046821513}
   - component: {fileID: 3751474132021601957}
   - component: {fileID: 4331071078628120572}
-  - component: {fileID: 8480168816046821510}
   - component: {fileID: 8480168816046821515}
-  - component: {fileID: 8480168816046821514}
+  - component: {fileID: 3456778144994280203}
+  - component: {fileID: 2718766610042562035}
   m_Layer: 0
-  m_Name: Enemy1
+  m_Name: Gimmick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8480168816046821511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.244, y: 2.284, z: 1}
+  m_LocalPosition: {x: -0.18, y: -0.211, z: 0}
+  m_LocalScale: {x: 6.912219, y: 7.2566257, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,9 +76,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2eb57d45a91f6a498207ca17ccdf618, type: 3}
+  m_Sprite: {fileID: -3036133639751858452, guid: 5068694576aaf6c41aabf1d8f88ae96a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.64, y: 0.64}
@@ -113,19 +114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwnShots: 8
   bullet: {fileID: 6851241835016447833, guid: 13a31556fbe128849bb0596335a1f11d, type: 3}
---- !u!114 &8480168816046821510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8480168816046821511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7c375b966de5f419e0dc7f34d44897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: -40
 --- !u!50 &8480168816046821515
 Rigidbody2D:
   serializedVersion: 4
@@ -147,8 +135,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!61 &8480168816046821514
-BoxCollider2D:
+--- !u!60 &3456778144994280203
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -164,12 +152,102 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.27, y: 0.41}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.5}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.028597623, y: 0.20500001}
+      - {x: 0.008060135, y: 0.20622805}
+      - {x: 0.004214813, y: 0.18413955}
+      - {x: -0.012463527, y: 0.1850793}
+      - {x: -0.016667653, y: 0.19734603}
+      - {x: -0.03287865, y: 0.19627811}
+      - {x: -0.0316672, y: 0.20582213}
+      - {x: -0.06353074, y: 0.20558335}
+      - {x: -0.06434751, y: 0.1784495}
+      - {x: -0.09640564, y: 0.17741631}
+      - {x: -0.09538556, y: 0.122743614}
+      - {x: -0.095755875, y: 0.082997225}
+      - {x: -0.07577495, y: 0.06224041}
+      - {x: -0.062091187, y: 0.05340052}
+      - {x: -0.12602416, y: -0.014867277}
+      - {x: -0.12561297, y: -0.032296587}
+      - {x: -0.13511857, y: -0.031130757}
+      - {x: -0.1352106, y: -0.0559141}
+      - {x: -0.12617478, y: -0.066028506}
+      - {x: -0.0943115, y: -0.06595567}
+      - {x: -0.084465116, y: -0.053808544}
+      - {x: -0.08289762, y: -0.025949841}
+      - {x: -0.07248735, y: -0.023355417}
+      - {x: -0.06445351, y: -0.025465133}
+      - {x: -0.06521434, y: -0.05776672}
+      - {x: -0.06664876, y: -0.09232084}
+      - {x: -0.07521131, y: -0.09303236}
+      - {x: -0.075637676, y: -0.11395172}
+      - {x: -0.08502548, y: -0.113991976}
+      - {x: -0.08557165, y: -0.12281985}
+      - {x: -0.093784206, y: -0.123095624}
+      - {x: -0.09565045, y: -0.14392309}
+      - {x: -0.10497722, y: -0.14338791}
+      - {x: -0.1048439, y: -0.16312309}
+      - {x: -0.114410065, y: -0.16334654}
+      - {x: -0.115353644, y: -0.19603382}
+      - {x: -0.10785561, y: -0.19541635}
+      - {x: -0.10587351, y: -0.205}
+      - {x: -0.06466332, y: -0.20505103}
+      - {x: -0.06410487, y: -0.19795685}
+      - {x: -0.053592417, y: -0.19595577}
+      - {x: -0.04921951, y: -0.16585365}
+      - {x: -0.043528557, y: -0.1655718}
+      - {x: -0.0414348, y: -0.13452849}
+      - {x: -0.032681275, y: -0.13377444}
+      - {x: -0.030150509, y: -0.116820194}
+      - {x: -0.022845976, y: -0.11608271}
+      - {x: -0.022710871, y: -0.09564587}
+      - {x: -0.005804317, y: -0.09502101}
+      - {x: -0.015051719, y: -0.18185535}
+      - {x: -0.0053050593, y: -0.19504645}
+      - {x: 0.06635874, y: -0.19448696}
+      - {x: 0.063956544, y: -0.164614}
+      - {x: 0.056523345, y: -0.16239169}
+      - {x: 0.057416882, y: -0.15239124}
+      - {x: 0.048075672, y: -0.15173748}
+      - {x: 0.045159403, y: -0.11323296}
+      - {x: 0.03708163, y: -0.111488044}
+      - {x: 0.035590038, y: -0.054470845}
+      - {x: 0.02643004, y: -0.053505223}
+      - {x: 0.026955485, y: -0.02497491}
+      - {x: 0.08324937, y: -0.023553682}
+      - {x: 0.086908184, y: -0.016272292}
+      - {x: 0.13746452, y: -0.015092939}
+      - {x: 0.13856229, y: 0.09571262}
+      - {x: 0.09778485, y: 0.09779339}
+      - {x: 0.095535055, y: 0.105370924}
+      - {x: 0.0565935, y: 0.105926596}
+      - {x: 0.057786208, y: 0.11090864}
+      - {x: 0.0778817, y: 0.12493166}
+      - {x: 0.07626129, y: 0.17025445}
+      - {x: 0.052265022, y: 0.17095642}
+--- !u!95 &2718766610042562035
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8480168816046821511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a5e2502d9627f24398fba4562b3787d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
