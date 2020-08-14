@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Giardini.unity
     guid: 5648c3068ca0def389ed0a1968b9b8ee
   - enabled: 1
+    path: Assets/Scenes/Middle.unity
+    guid: c8742eaeb94da4a20a7850d8f25a4e78
+  - enabled: 1
     path: Assets/Scenes/Abbatoggia1.unity
     guid: 78f7a7ca836885c43b455b343963c1dc
   - enabled: 1

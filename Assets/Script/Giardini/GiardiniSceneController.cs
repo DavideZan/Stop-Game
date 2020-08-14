@@ -11,10 +11,12 @@ public class GiardiniSceneController : ShootingSceneController
 
     override public void LoadNextScene()
     {
+        //SaveDataForMiddleScene();
         if (chosenPath == Path.Abbatoggia){
-            SceneManager.LoadScene(nextAbbatoggia);
+            nextScene = nextAbbatoggia;
         } else if (chosenPath == Path.Case){
-            SceneManager.LoadScene(nextCase);
+            nextScene = nextCase;
         }
+        base.LoadNextScene();
     }
 }

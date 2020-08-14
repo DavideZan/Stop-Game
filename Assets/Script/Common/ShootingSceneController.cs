@@ -55,7 +55,9 @@ public class ShootingSceneController : SceneController
                 LoadNextScene();
             } else {
                 SaveData();
-                SceneManager.LoadScene("Menu Screen");
+                SaveDataForMiddleScene();
+                nextScene = "Menu Screen";
+                LoadNextScene();
             }
         }
     }
@@ -75,5 +77,29 @@ public class ShootingSceneController : SceneController
         int gained = waiting.First.Value;
         waiting.RemoveFirst();
         saved.Add(gained);
+    }
+
+    override public void LoadNextScene()
+    {
+        SaveDataForMiddleScene();
+        SceneManager.LoadScene("Middle");
+    }
+
+    protected virtual void SaveDataForMiddleScene()
+    {
+        PlayerPrefs.SetString("nextScene", nextScene);
+        PlayerPrefs.SetInt("score", score);
+
+        if (saved.Count > 0) {
+            PlayerPrefs.SetInt("gained", saved[saved.Count-1]);
+        } else {
+            PlayerPrefs.DeleteKey("gained");
+        }
+
+        if ( SceneManager.GetActiveScene().name == "Stop" && saved.Count > 0){
+            PlayerPrefs.SetInt("win", 1);
+        } else {
+            PlayerPrefs.SetInt("win", 0);
+        }
     }
 }
