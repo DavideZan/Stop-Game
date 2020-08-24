@@ -18,19 +18,17 @@ public class ClosedBridgeCollision : MonoBehaviour
         Debug.Log("AAAAAAAAAAAAAa " + col.gameObject);
         if (col.gameObject.tag == "Player")
         {
-            Destroy(col.gameObject);
-            controller.KillPlayer();
+            controller.AttackPlayer();
         }    
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+/*     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAA COLLISION");
         Debug.Log("AAAAAAAAAAAAAa " + other.gameObject);
         if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
-            controller.KillPlayer();
+            controller.AttackPlayer();
         }
-    }
+    } */
 }

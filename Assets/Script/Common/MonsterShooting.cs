@@ -6,13 +6,14 @@ public class MonsterShooting : MonoBehaviour
 {
 
     private float remainingTime;
-    public float startTimeBtwnShots;
+    public float minTimeBtwnShots;
+    public float maxTimeBtwnShots;
     public GameObject bullet;
  
     // Start is called before the first frame update
     void Start()
     {
-        remainingTime = startTimeBtwnShots;
+        remainingTime = Random.Range(minTimeBtwnShots, maxTimeBtwnShots);
     }
     // Update is called once per frame
     void Update()
@@ -21,7 +22,7 @@ public class MonsterShooting : MonoBehaviour
         if (remainingTime <= 0)
         {
             Instantiate(bullet, transform.position, Quaternion.identity);
-            remainingTime = startTimeBtwnShots;
+            remainingTime = Random.Range(minTimeBtwnShots, maxTimeBtwnShots);
         }
         else
         {

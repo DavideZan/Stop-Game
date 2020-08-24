@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9d0924051178c4db45fd93fd5ca5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwnShots: 8
+  minTimeBtwnShots: 9
+  maxTimeBtwnShots: 11
   bullet: {fileID: 6851241835016447833, guid: 13a31556fbe128849bb0596335a1f11d, type: 3}
 --- !u!50 &8480168816046821515
 Rigidbody2D:
