@@ -16,7 +16,7 @@ public class ScoreScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
+        controller = (ShootingSceneController)FindObjectOfType(typeof(ShootingSceneController));
         score = GetComponent<Text>();
         scoreValue = controller.GetScore();
         fixedText = score.text;
@@ -32,5 +32,10 @@ public class ScoreScript : MonoBehaviour
     {
         scoreValue += tot;
         controller.AddScore(tot);
+    }
+    public void VeloxNull()
+    {
+        scoreValue = 0;
+        
     }
 }

@@ -27,6 +27,7 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Shooting();
+
         }
     }
 
@@ -36,7 +37,7 @@ public class Shoot : MonoBehaviour
         {
             sound.Play();
             RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward);
-            //Debug.Log(hit.collider);
+            Debug.Log(hit.collider);
             Debug.DrawRay(target, Vector3.forward, Color.yellow, 2);
             if (hit.collider != null)
             {

@@ -21,7 +21,7 @@ public class ShootingSceneController : SceneController
         return alive[currentIndex];
     }
 
-    public void GeneratedPlayer()
+    virtual public void GeneratedPlayer()
     {
         currentIndex++;
     }
