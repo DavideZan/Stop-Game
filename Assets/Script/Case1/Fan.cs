@@ -77,9 +77,7 @@ public class Fan : ShootableObject
     {
         if (currentState == State.IDLE)
         {
-            var player = GameObject.FindGameObjectsWithTag("Player");
-            Destroy(player[0]);
-            controller.KillPlayer();
+            controller.AttackPlayer();
         }
     }
 

@@ -13,18 +13,11 @@ public class Buddhet : MonoBehaviour
         controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Destroy(collision.gameObject);
-            controller.KillPlayer();
+            controller.AttackPlayer();
         }
         Destroy(gameObject);
     }

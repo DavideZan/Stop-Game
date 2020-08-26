@@ -15,6 +15,7 @@ public class BulletScript : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
+        controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
     }
 
     void Update()
@@ -30,8 +31,7 @@ public class BulletScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Destroy(collision.gameObject);
-            controller.KillPlayer();
+            controller.AttackPlayer();
             DestroyBullet();
         }
     }

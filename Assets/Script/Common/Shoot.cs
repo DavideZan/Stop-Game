@@ -49,8 +49,7 @@ public class Shoot : MonoBehaviour
                 else if (hit.collider.tag == "Player")
                 {
                     var controller = (ShootingSceneController) FindObjectOfType(typeof(ShootingSceneController));
-                    Destroy(hit.collider.gameObject);
-                    controller.KillPlayer();
+                    controller.AttackPlayer();
 
                 } else if (hit.collider.GetComponent<BulletScript>() != null)
                 {

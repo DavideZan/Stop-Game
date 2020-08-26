@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class ShootingSceneController : SceneController
 {
+    protected GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,10 +35,14 @@ public class ShootingSceneController : SceneController
         //Debug.Log("SAVED: " + saved.Count);
     }
 
-    virtual public void KillPlayer()
-    {
-        dead.Add(alive[currentIndex-1]);
-        waiting.AddFirst(alive[currentIndex-1]);
+    virtual public void AttackPlayer()
+    {   
+        if (player == null)
+        {
+            player =  GameObject.FindGameObjectsWithTag("Player")[0];
+        }     
+        Destroy(player);
+        KillPlayer();
     }
 
     public bool CanGeneratePlayer()
@@ -70,6 +76,12 @@ public class ShootingSceneController : SceneController
     public int GetScore()
     {
         return score;
+    }
+
+    private void KillPlayer()
+    {
+        dead.Add(alive[currentIndex-1]);
+        waiting.AddFirst(alive[currentIndex-1]);
     }
 
     private void GainNewCharacter()

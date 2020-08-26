@@ -8,7 +8,7 @@ public class StopController : ShootingSceneController
 
     public void GainHaloShotgun()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player =  GameObject.FindGameObjectsWithTag("Player")[0];
         GameObject haloShotgun = Instantiate(haloShotgunPrefab, 
                                                 player.transform.position, 
                                                 Quaternion.Euler(0f, 180f, 0f),
@@ -17,10 +17,22 @@ public class StopController : ShootingSceneController
         haloShotgun.transform.localScale = new Vector3(.4f,.4f,1f);
         haloShotgun.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
     }
-        
+
+    public override void AttackPlayer()
+    {
+            player =  GameObject.FindGameObjectsWithTag("Player")[0];
+        if (player.transform.childCount == 0) {
+            Debug.Log("NO CHILDREN");
+            base.AttackPlayer();
+        } else {
+            Debug.Log("Destroyed gun");
+            Destroy(player.transform.GetChild(0).gameObject);
+        }
+    }
+
     protected void RemoveHaloShotgun()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        Destroy(player.transform.GetChild(0));
+        player =  GameObject.FindGameObjectsWithTag("Player")[0];
+        Destroy(player.transform.GetChild(0).gameObject);
     }
 }

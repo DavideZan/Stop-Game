@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CasaLuciaController : ShootingSceneController
 {
-
     public Fan fan;
     public Thermometer thermometer;
 
@@ -18,10 +17,10 @@ public class CasaLuciaController : ShootingSceneController
         }
     }
 
-    override public void KillPlayer()
+    override public void AttackPlayer()
     {
         fan.ResetScene();
         thermometer.SetTemperature(State.FAST);
-        base.KillPlayer();
+        base.AttackPlayer();
     }
 }
