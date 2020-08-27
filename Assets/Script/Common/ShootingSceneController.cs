@@ -12,7 +12,7 @@ public class ShootingSceneController : SceneController
     void Start()
     {
         LoadData();
-        //Debug.Log("N° ALIVE: " + alive.Count);
+        //Debug.Log("N° WAITING: " + waiting.Count);
         currentIndex = 0;
         saved = new List<int>();
         dead = new List<int>();
@@ -108,7 +108,7 @@ public class ShootingSceneController : SceneController
             PlayerPrefs.DeleteKey("gained");
         }
 
-        if ( SceneManager.GetActiveScene().name == "Stop" && saved.Count > 0){
+        if ( SceneManager.GetActiveScene().name == "Boss" && saved.Count > 0){
             PlayerPrefs.SetInt("win", 1);
         } else {
             PlayerPrefs.SetInt("win", 0);
