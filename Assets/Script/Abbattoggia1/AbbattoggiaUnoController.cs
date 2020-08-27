@@ -14,8 +14,7 @@ public class AbbattoggiaUnoController : ShootingSceneController
 
     public void ShootPlate()
     {
-        velox.veloxAttivo = false;
-        
+        velox.SetActive(false);        
     }
 
     override public void GeneratedPlayer()
@@ -24,9 +23,7 @@ public class AbbattoggiaUnoController : ShootingSceneController
         {
             velox = (VeloxScript)FindObjectOfType(typeof(VeloxScript));
         }
-        velox.veloxAttivo = true;
+        velox.SetActive(true);
         base.GeneratedPlayer();
-
-
     }
 }

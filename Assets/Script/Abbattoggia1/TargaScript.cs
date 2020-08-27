@@ -10,6 +10,7 @@ public class TargaScript : ShootableObject
     void Start()
     {
         controller = (AbbattoggiaUnoController)FindObjectOfType(typeof(AbbattoggiaUnoController));
+        Physics2D.IgnoreLayerCollision(9,10);
     }
 
     public override void OnShoot()

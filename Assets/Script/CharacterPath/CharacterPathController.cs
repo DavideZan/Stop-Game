@@ -35,7 +35,7 @@ public class CharacterPathController : SceneController
 
     private LinkedList<int> GenerateWaitingExcluding(int i) 
     {
-        int[] waits = Enumerable.Range(1, 13)
+        int[] waits = Enumerable.Range(0, 12)
                                 .Where((e, _) => e != i)
                                 .OrderBy(x => Random.Range(0f,1f))
                                 .ToArray();

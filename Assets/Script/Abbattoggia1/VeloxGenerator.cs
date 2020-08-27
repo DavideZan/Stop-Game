@@ -9,14 +9,14 @@ public class VeloxGenerator : MonoBehaviour
     public float enemyY = 0f;
     public float objectOnScreen;
     public GameObject enemyPrefab;
-    private float VeloxCounter = 1f;
+    //private float VeloxCounter = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (VeloxCounter == 1f)
+        //if (VeloxCounter == 1f)
         GenerateEnemy();
-        VeloxCounter = 0;
+        //VeloxCounter = 0;
     }
 
     // Update is called once per frame
@@ -33,5 +33,6 @@ public class VeloxGenerator : MonoBehaviour
         
         GameObject enemy = Instantiate(enemyPrefab, new Vector2(enemyX, enemyY), Quaternion.identity, this.gameObject.transform);
         enemy.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
+        enemy.layer = 10;
     }
 }

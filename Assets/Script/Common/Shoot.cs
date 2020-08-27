@@ -61,7 +61,9 @@ public class Shoot : MonoBehaviour
                     hit.collider.GetComponent<ShootableObject>().OnShoot();
                     scoreScript.AddPoints(75);
                 }
-                else if (hit.collider.GetComponent<Boss>() != null) 
+                else if (hit.collider.GetComponent<Boss>() != null
+                        || hit.collider.GetComponent<Fireplace>() != null
+                        || hit.collider.GetComponent<VeloxScript>() != null) 
                 {
                 }
                 else
