@@ -9,6 +9,8 @@ public class EnemyGeneratorGiardini : MonoBehaviour
     public float enemyZ;
     int[] spawnX = new int[3] { 0, 2, 9 };
     bool[] posOccupied = new bool[3] { false, false, false };
+    [SerializeField] private float myDelay = 1f;
+    
 
     //Random ran = new Random();
     //public float objectOnScreen;
@@ -50,7 +52,7 @@ public class EnemyGeneratorGiardini : MonoBehaviour
                 GameObject enemy = Instantiate(enemyPrefab, new Vector3(spawnX[i], enemyY, enemyZ), Quaternion.identity, this.gameObject.transform);
                 enemy.GetComponent<SpriteRenderer>().sortingLayerName = "Entities";
                 posOccupied[i] = true;
-                break;
+                Invoke("MyFunction", myDelay);
 
             }
         }

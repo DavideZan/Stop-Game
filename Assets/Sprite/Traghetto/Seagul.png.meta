@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 57545f84e268d15438bd8e987e155b47
+guid: 2663baac04c168f418bebe22e4f3185f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6716156461439571400
-    second: Tree 4_0
+      213: 7886183115270296494
+    second: Seagul_0
   - first:
-      213: 1303906152778472352
-    second: Tree 4_1
+      213: 3159721399025240441
+    second: Seagul_1
+  - first:
+      213: 8594305946147300543
+    second: Seagul_2
+  - first:
+      213: -2849189438670977913
+    second: Seagul_3
+  - first:
+      213: 6773271852657479894
+    second: Seagul_4
+  - first:
+      213: 2626950903643647191
+    second: Seagul_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -143,13 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree 4_0
+      name: Seagul_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 42
-        height: 56
+        x: 23
+        y: 282
+        width: 78
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83a23f3384b6bc2a0800000000000000
-      internalID: -6716156461439571400
+      spriteID: ea39e53b2c9517d60800000000000000
+      internalID: 7886183115270296494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree 4_1
+      name: Seagul_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 2
-        width: 21
-        height: 44
+        x: 151
+        y: 282
+        width: 78
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +190,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ab9ec0dcb7681210800000000000000
-      internalID: 1303906152778472352
+      spriteID: 979891a1fd599db20800000000000000
+      internalID: 3159721399025240441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seagul_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 154
+        width: 83
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4232339bb154770800000000000000
+      internalID: 8594305946147300543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seagul_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 154
+        width: 78
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784c83a1d45a578d0800000000000000
+      internalID: -2849189438670977913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seagul_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 26
+        width: 83
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d01dc81dde7ffd50800000000000000
+      internalID: 6773271852657479894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seagul_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 26
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc221ebdedc47420800000000000000
+      internalID: 2626950903643647191
       vertices: []
       indices: 
       edges: []

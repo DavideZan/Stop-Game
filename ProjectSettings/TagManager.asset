@@ -6,6 +6,7 @@ TagManager:
   tags:
   - left
   - right
+  - DownBridgeDestroyer
   layers:
   - Default
   - TransparentFX
