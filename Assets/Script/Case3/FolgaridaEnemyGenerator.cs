@@ -5,7 +5,7 @@ using UnityEngine;
 public class FolgaridaEnemyGenerator : EnemyGenerator
 { 
     //TODO: enemyPrefab is to be chosen from a list of animations
-    override protected void GenerateEnemy()
+    override protected void NewEnemy()
     {
         float enemyY = Random.Range(minY, maxY);
         float enemyX = Random.Range(minX, maxX);

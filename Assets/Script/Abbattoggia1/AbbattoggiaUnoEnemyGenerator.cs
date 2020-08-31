@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AbbattoggiaUnoEnemyGenerator : EnemyGenerator
 {
-    override protected void GenerateEnemy()
+    override protected void NewEnemy()
     {
         float enemyY = Mathf.Floor(Random.Range(minY, maxY));
         float enemyX = Mathf.Floor(Random.Range(minX, maxX));
