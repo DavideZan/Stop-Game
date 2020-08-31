@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NoFloorEnemyGenerator : EnemyGenerator
 {
-    override protected void GenerateEnemy()
+    override protected void NewEnemy()
     {
         float enemyY = Random.Range(minY, maxY);
         float enemyX = Random.Range(minX, maxX);
