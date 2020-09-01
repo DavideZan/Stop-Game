@@ -63,7 +63,8 @@ public class Shoot : MonoBehaviour
                 }
                 else if (hit.collider.GetComponent<Boss>() != null
                         || hit.collider.GetComponent<Fireplace>() != null
-                        || hit.collider.GetComponent<VeloxScript>() != null) 
+                        || hit.collider.GetComponent<VeloxScript>() != null
+                        || hit.collider.GetComponent<PortelloneScript>() != null) 
                 {
                 }
                 else
