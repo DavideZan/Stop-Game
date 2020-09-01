@@ -16,7 +16,7 @@ public class TargaScript : ShootableObject
     public override void OnShoot()
     {
         controller.ShootPlate();
-        Debug.Log("AAAAO");
+        //Debug.Log("AAAAO");
     }
 }
 
