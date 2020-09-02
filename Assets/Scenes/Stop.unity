@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &21218912
 Transform:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ Transform:
   - {fileID: 1017471228}
   - {fileID: 1655120756}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128860930
 GameObject:
@@ -884,7 +884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1019623359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056995010
 GameObject:
@@ -1512,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1600853306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1592,8 @@ MonoBehaviour:
   objectOnScreen: 2
   enemyPrefab: {fileID: 8480168816046821511, guid: a4766615f119970449121338733342b9,
     type: 3}
+  minGenerationTimeout: 0
+  maxGenerationTimeout: 0
 --- !u!1 &1763126985
 GameObject:
   m_ObjectHideFlags: 0

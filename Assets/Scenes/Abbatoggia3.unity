@@ -209,6 +209,8 @@ MonoBehaviour:
   objectOnScreen: 1
   enemyPrefab: {fileID: 8480168816046821511, guid: a4766615f119970449121338733342b9,
     type: 3}
+  minGenerationTimeout: 0
+  maxGenerationTimeout: 0
 --- !u!1 &143255364
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +261,8 @@ MonoBehaviour:
   objectOnScreen: 3
   enemyPrefab: {fileID: 5324085765874416477, guid: f99f61b63922aeb9ab7af73255b22a51,
     type: 3}
+  minGenerationTimeout: 0
+  maxGenerationTimeout: 0
 --- !u!1 &436408550
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &609024517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1075,7 +1079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &944617879
 Transform:
   m_ObjectHideFlags: 0
