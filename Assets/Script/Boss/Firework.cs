@@ -5,15 +5,13 @@ using UnityEngine;
 public class Firework : MonoBehaviour
 {
 
-    private SpriteRenderer sprite;
     private AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        gameObject.SetActive(false);
         sound = GetComponent<AudioSource>();
-        sprite.enabled = false;
     }
 
     // Update is called once per frame
@@ -24,7 +22,7 @@ public class Firework : MonoBehaviour
 
     public void Shoot()
     {
-        sprite.enabled = true;
+        gameObject.SetActive(true);
         sound.Play();
     }
 }
