@@ -3,22 +3,22 @@ guid: 3ebfb985c7db6cb4dbc3c479f3e91edd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4782270691645964495
+      213: 21300000
     second: fire2 1_0
   - first:
-      213: -6249824206090617216
+      213: 21300002
     second: fire2 1_1
   - first:
-      213: 845869939034911981
+      213: 21300004
     second: fire2 1_2
   - first:
-      213: 9211312199744063537
+      213: 21300006
     second: fire2 1_3
   - first:
-      213: -7872635506790454552
+      213: 21300008
     second: fire2 1_4
   - first:
-      213: -2033137914197068641
+      213: 21300010
     second: fire2 1_5
   externalObjects: {}
   serializedVersion: 11
@@ -77,7 +77,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -90,7 +90,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -102,7 +102,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -114,7 +114,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -126,7 +126,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -138,7 +138,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -150,7 +150,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -170,7 +170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 13f3eacb426f1adb0800000000000000
-      internalID: -4782270691645964495
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 08eb45f5ff92449a0800000000000000
-      internalID: -6249824206090617216
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de47b5a5a322dbb00800000000000000
-      internalID: 845869939034911981
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -233,7 +233,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 13887fc54a725df70800000000000000
-      internalID: 9211312199744063537
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -254,7 +254,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8eaa0a3b7b7ceb290800000000000000
-      internalID: -7872635506790454552
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -275,7 +275,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f94b7ecc6d7d8c3e0800000000000000
-      internalID: -2033137914197068641
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []

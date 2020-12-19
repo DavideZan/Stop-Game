@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 084a711b721754246aa86c692b8abc6e
+guid: 9f2f5de7c1470f24c98ff928cf1c812e
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: Termometer_0
+    second: CoolShelf (1)_0
   - first:
       213: 21300002
-    second: Termometer_1
+    second: CoolShelf (1)_1
   - first:
       213: 21300004
-    second: Termometer_2
-  - first:
-      213: 21300006
-    second: Termometer_3
+    second: CoolShelf (1)_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +123,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -138,7 +135,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Termometer_0
+      name: CoolShelf (1)_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 35
-        width: 11
-        height: 32
+        x: 4
+        y: 246
+        width: 248
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e027879d27561a820800000000000000
+      spriteID: 416e66c4768b811a0800000000000000
       internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Termometer_1
+      name: CoolShelf (1)_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 35
-        width: 11
-        height: 32
+        x: 4
+        y: 138
+        width: 248
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e6f3d4f0264c50b0800000000000000
+      spriteID: fe5e8266e428905a0800000000000000
       internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Termometer_2
+      name: CoolShelf (1)_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 11
-        height: 32
+        x: 4
+        y: 10
+        width: 248
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,29 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 210582b3dfa69ffc0800000000000000
+      spriteID: 63da054e742d54560800000000000000
       internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Termometer_3
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 1
-        width: 11
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bacbafbe81aede7e0800000000000000
-      internalID: 21300006
       vertices: []
       indices: 
       edges: []
