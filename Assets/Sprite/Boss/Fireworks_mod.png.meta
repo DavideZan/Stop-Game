@@ -102,7 +102,7 @@ TextureImporter:
       213: 21300064
     second: Fireworks_mod_32
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -119,10 +119,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -132,8 +134,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -154,11 +156,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -170,6 +176,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -182,6 +189,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -890,9 +924,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Fireworks_mod_0: 21300000
+      Fireworks_mod_1: 21300002
+      Fireworks_mod_10: 21300020
+      Fireworks_mod_11: 21300022
+      Fireworks_mod_12: 21300024
+      Fireworks_mod_13: 21300026
+      Fireworks_mod_14: 21300028
+      Fireworks_mod_15: 21300030
+      Fireworks_mod_16: 21300032
+      Fireworks_mod_17: 21300034
+      Fireworks_mod_18: 21300036
+      Fireworks_mod_19: 21300038
+      Fireworks_mod_2: 21300004
+      Fireworks_mod_20: 21300040
+      Fireworks_mod_21: 21300042
+      Fireworks_mod_22: 21300044
+      Fireworks_mod_23: 21300046
+      Fireworks_mod_24: 21300048
+      Fireworks_mod_25: 21300050
+      Fireworks_mod_26: 21300052
+      Fireworks_mod_27: 21300054
+      Fireworks_mod_28: 21300056
+      Fireworks_mod_29: 21300058
+      Fireworks_mod_3: 21300006
+      Fireworks_mod_30: 21300060
+      Fireworks_mod_31: 21300062
+      Fireworks_mod_32: 21300064
+      Fireworks_mod_4: 21300008
+      Fireworks_mod_5: 21300010
+      Fireworks_mod_6: 21300012
+      Fireworks_mod_7: 21300014
+      Fireworks_mod_8: 21300016
+      Fireworks_mod_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
