@@ -2371,8 +2371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Case2
-  fan: {fileID: 0}
-  thermometer: {fileID: 0}
+  fan: {fileID: 93427168}
+  thermometer: {fileID: 1061806816}
 --- !u!1 &2012785257
 GameObject:
   m_ObjectHideFlags: 0
